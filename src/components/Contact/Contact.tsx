@@ -11,7 +11,9 @@ export default function Contact() {
           <p>
             Ceyrat 35 B Street <br />
             City Oradea <br />
-            Romania, 417598
+            Romania, 417598,
+            <br />
+            Phone: 0758883530
           </p>
         </div>
         <div className="contact-block email">
