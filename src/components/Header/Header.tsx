@@ -11,7 +11,7 @@ export default function Header() {
   const botLine = useRef<HTMLSpanElement | null>(null);
 
   const [open, setOpen] = useState(false);
-  const tl = useRef<gsap.core.Timeline>();
+  const tl = useRef<gsap.core.Timeline | null>(null);
 
   useLayoutEffect(() => {
     if (!headerRef.current) return;
