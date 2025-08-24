@@ -1,0 +1,113 @@
+.team-wrap {
+  position: relative;
+  padding: clamp(56px, 8vw, 96px) 0;
+}
+
+.team-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: clamp(24px, 5vw, 40px);
+}
+
+.team-title {
+  margin: 0;
+  color: #dfe2e8;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+}
+
+.team-index {
+  color: #8f95a3;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+}
+
+/* 2 coloane pe desktop/tabletă, 1 coloană pe mobil */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(20px, 2.6vw, 32px);
+}
+
+@media (max-width: 900px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ——— fără nicio regulă de offset aici ——— */
+
+.member-card {
+  display: flex;
+  flex-direction: column;
+  outline: none;
+  border-radius: 28px;
+  background: transparent;
+  transition: transform 0.2s ease;
+}
+
+.member-card:focus-visible {
+  box-shadow: 0 0 0 3px rgba(195, 219, 98, 0.55);
+  border-radius: 30px;
+}
+
+.member-photo {
+  margin: 0;
+  border-radius: 28px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+  aspect-ratio: 1.35 / 1;
+  background: #0b0d12;
+  transform: translateZ(0);
+}
+
+.member-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transform: scale(1.001);
+  transition: transform 0.6s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.member-info {
+  padding: 18px 12px 0;
+  border-radius: 26px;
+}
+
+.member-name {
+  margin: 8px 8px 4px;
+  color: #f3f5f8;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: clamp(1.05rem, 1.8vw, 1.35rem);
+}
+
+.member-role {
+  margin: 0 8px 10px;
+  color: #aeb6c5;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+.member-link {
+  margin: 0 8px 14px;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #c3db62;
+  text-decoration: none;
+}
+
+.member-link:hover {
+  text-decoration: underline;
+}
+
+.member-card:hover .member-photo img {
+  transform: scale(1.04);
+}

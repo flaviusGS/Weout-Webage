@@ -1,0 +1,117 @@
+.sp-wrap {
+  position: relative;
+  padding: clamp(40px, 6vw, 72px) 0 clamp(40px, 6vw, 72px);
+  z-index: 1;
+}
+.sp-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: clamp(22px, 5vw, 36px);
+}
+.sp-title {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  color: #dfe2e8;
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+}
+.sp-index {
+  color: #8f95a3;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+}
+
+.sp-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(20px, 2.4vw, 28px);
+  align-items: stretch;
+}
+
+@media (min-width: 1025px) {
+  .sp-grid.offset .sp-card:nth-child(2n) {
+    margin-top: clamp(10px, 2.2vw, 28px);
+  }
+}
+
+@media (max-width: 1024px) {
+  .sp-grid {
+    grid-template-columns: 1fr;
+  }
+  .sp-grid.offset .sp-card {
+    margin-top: 0;
+  }
+}
+
+.sp-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 22px;
+  overflow: hidden;
+  background: transparent;
+}
+
+.sp-cover {
+  margin: 0;
+  border-radius: 22px;
+  overflow: hidden;
+  background: #0b0d12;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+}
+.sp-cover img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 16/11;
+}
+
+.sp-body {
+  margin-top: 14px;
+  border-radius: 22px;
+  padding: clamp(18px, 2vw, 24px);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.08),
+    rgba(255, 255, 255, 0.04)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.sp-card-title {
+  margin: 0 0 8px;
+  color: #e9ecf2;
+  font-weight: 800;
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+}
+.sp-card-text {
+  color: #aeb6c5;
+  margin: 0 0 16px;
+  line-height: 1.65;
+}
+
+.sp-feats {
+  margin-top: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.sp-feat-title {
+  color: #c3db62;
+  font-weight: 800;
+  margin: 0 0 6px;
+  font-size: 1rem;
+}
+.sp-feat-text {
+  color: #c6cbd6;
+  margin: 0;
+  line-height: 1.6;
+}

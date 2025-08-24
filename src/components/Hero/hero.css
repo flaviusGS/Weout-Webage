@@ -1,0 +1,177 @@
+:root {
+  --header-h: 72px;
+}
+
+.hero-wrap {
+  position: relative;
+  overflow: clip;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  padding: calc(var(--header-h) + clamp(24px, 4vh, 56px)) 0
+    clamp(72px, 10vh, 140px);
+}
+
+.hero-foreground {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hero-eyebrow {
+  color: var(--muted);
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  margin: 0 0 18px;
+}
+
+.hero-title {
+  margin: 0 auto;
+  max-width: 1200px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  line-height: 0.95;
+  font-size: clamp(2.2rem, 8vw, 6rem);
+}
+.hero-title span {
+  display: inline-block;
+}
+
+.hero-bg.static {
+  position: absolute;
+  inset: -20vh -18vw;
+  z-index: 1;
+  transform: rotate(8deg);
+  pointer-events: none;
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.static-row {
+  display: flex;
+  align-items: center;
+  gap: 10vw;
+}
+
+.hero-card {
+  flex-shrink: 0;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #0b0d12;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+}
+.hero-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-v {
+  width: clamp(230px, 17vw, 310px);
+  height: clamp(330px, 40vw, 570px);
+}
+.card-h {
+  width: clamp(330px, 36vw, 610px);
+  height: clamp(210px, 22vw, 310px);
+}
+
+.static-row .card-v:first-child {
+  transform: translate(-20px, 30px) rotate(-4deg);
+}
+.static-row .card-h {
+  transform: translateY(-40px) rotate(3deg);
+}
+.static-row .card-v:last-child {
+  transform: translate(25px, 50px) rotate(-2deg);
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  z-index: 3;
+  font-family: 'Manrope', sans-serif;
+}
+.scroll-indicator .line {
+  position: relative;
+  width: 2px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+}
+.scroll-indicator .dot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 12px;
+  background: #c3db62;
+  animation: scrollDot 2s infinite;
+}
+@keyframes scrollDot {
+  0% {
+    top: 0;
+    opacity: 0;
+  }
+  20% {
+    top: 0;
+    opacity: 1;
+  }
+  50% {
+    top: 20px;
+    opacity: 1;
+  }
+  80% {
+    top: 40px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 0;
+  }
+}
+.scroll-indicator .label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: var(--muted);
+}
+
+@media (max-width: 640px) {
+  :root {
+    --header-h: 68px;
+  }
+
+  .hero-wrap {
+    padding: calc(var(--header-h) + clamp(12px, 3vh, 28px)) 0
+      clamp(84px, 12vh, 140px);
+  }
+
+  .static-row {
+    gap: 6vw;
+  }
+  .card-v {
+    width: 42vw;
+    height: 64vw;
+  }
+  .card-h {
+    width: 66vw;
+    height: 38vw;
+  }
+
+  .hero-title {
+    font-size: clamp(1.9rem, 9vw, 3.4rem);
+    line-height: 1;
+  }
+}
