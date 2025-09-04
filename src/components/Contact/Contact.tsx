@@ -21,7 +21,7 @@ export default function Contact() {
             <a href="mailto:4eightysix@gmail.com">4eightysix@gmail.com</a>
           </p>
         </div>
-        <div className="contact-block socials">
+        {/* <div className="contact-block socials">
           <nav className="contact-socials" aria-label="Social links">
             <a href="https://twitter.com" target="_blank" rel="noreferrer">
               twitter
@@ -33,7 +33,7 @@ export default function Contact() {
               linkedin
             </a>
           </nav>
-        </div>
+        </div> */}
         <div className="contact-foot">
           © {year} — 4EightySix | All Rights Reserved
         </div>
