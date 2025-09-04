@@ -16,7 +16,8 @@ const MEMBERS: Member[] = [
   {
     name: "Flavius Stasac",
     role: "Co-Founder & General Manager",
-    photo: "/img/Flavius.png",
+    photo:
+      "https://github.com/flaviusGS/Weout-Webage/blob/main/public/img/Flavius.png?raw=true",
     linkedin: "https://www.linkedin.com/in/USERNAME",
   },
   {
