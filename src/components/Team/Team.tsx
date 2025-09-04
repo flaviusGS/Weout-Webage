@@ -23,19 +23,23 @@ const MEMBERS: Member[] = [
   {
     name: "Ciprian Negruț",
     role: "Co-Founder & Software Developer",
-    photo: "/img/Flavius.png",
+
+    photo:
+      "https://github.com/flaviusGS/Weout-Webage/blob/main/public/img/Cipri.png?raw=true",
     linkedin: "https://www.linkedin.com/in/USERNAME",
   },
   {
     name: "Andrei Havasi",
     role: "Co-Founder & Software Developer",
-    photo: "/img/Flavius.png",
+    photo:
+      "https://github.com/flaviusGS/Weout-Webage/blob/main/public/img/Andrei.png?raw=true",
     linkedin: "https://www.linkedin.com/in/USERNAME",
   },
   {
     name: "Bogdan Pupeza",
     role: "Co-Founder & Software Developer",
-    photo: "/img/Flavius.png",
+    photo:
+      "https://github.com/flaviusGS/Weout-Webage/blob/main/public/img/Bogdan.png?raw=true",
     linkedin: "https://www.linkedin.com/in/USERNAME",
   },
 ];
