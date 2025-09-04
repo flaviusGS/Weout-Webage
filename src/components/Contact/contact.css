@@ -78,9 +78,7 @@
   justify-content: center;
   align-items: center;
   font-size: 0.9rem;
-  color: #8f95a3;
-  text-align: start;
-}
+  color: #8f95a3;}
 
 @media (max-width: 800px) {
   .contact-grid {
