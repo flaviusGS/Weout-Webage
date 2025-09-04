@@ -2,6 +2,10 @@ import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./team.css";
+import FlaviusImg from "../../img/Flavius.png";
+import CipriImg from "../../img/Cipri.png";
+import AndreiImg from "../../img/Andrei.png";
+import BogdanImg from "../../img/Bogdan.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -14,27 +18,27 @@ type Member = {
 
 const MEMBERS: Member[] = [
   {
-    name: "Stasac Flavius",
+    name: "Flavius Stasac",
     role: "Co-Founder & General Manager",
-    photo: "/img/Flavius.png",
+    photo: FlaviusImg,
     linkedin: "https://www.linkedin.com/in/USERNAME",
   },
   {
-    name: "Negruț Ciprian",
+    name: "Ciprian Negruț",
     role: "Co-Founder & Software Developer",
-    photo: "/img/Cipri.png",
+    photo: CipriImg,
     linkedin: "https://www.linkedin.com/in/USERNAME",
   },
   {
     name: "Andrei Havasi",
     role: "Co-Founder & Software Developer",
-    photo: "/img/Andrei.png",
+    photo: AndreiImg,
     linkedin: "https://www.linkedin.com/in/USERNAME",
   },
   {
     name: "Bogdan Pupeza",
     role: "Co-Founder & Software Developer",
-    photo: "/img/Bogdan.png",
+    photo: BogdanImg,
     linkedin: "https://www.linkedin.com/in/USERNAME",
   },
 ];
