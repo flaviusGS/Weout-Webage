@@ -34,9 +34,9 @@ export default function Contact() {
             </a>
           </nav>
         </div> */}
-        <div className="contact-foot">
-          © {year} — 4EightySix | All Rights Reserved
-        </div>
+      </div>
+      <div className="contact-foot">
+        © {year} — 4EightySix | All Rights Reserved
       </div>
     </footer>
   );
