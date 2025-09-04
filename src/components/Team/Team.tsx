@@ -2,10 +2,10 @@ import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./team.css";
-import FlaviusImg from "../img/Flavius.png";
-import CipriImg from "../img/Cipri.png";
-import AndreiImg from "../img/Andrei.png";
-import BogdanImg from "../img/Bogdan.png";
+import FlaviusImg from "./Weout-Webage/src/components/Team/img/Flavius.png";
+import CipriImg from "./Weout-Webage/src/img/Cipri.png";
+import AndreiImg from "./Weout-Webage/src/img/Andrei.png";
+import BogdanImg from "./Weout-Webage/src/img/Bogdan.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
