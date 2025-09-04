@@ -75,6 +75,8 @@
 
 .contact-foot {
   text-align: center;
+  justify-content: center;
+  align-items: center;
   font-size: 0.9rem;
   color: #8f95a3;
   text-align: start;
