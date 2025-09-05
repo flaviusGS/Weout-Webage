@@ -18,7 +18,7 @@ export default function Contact() {
         </div>
         <div className="contact-block email">
           <p className="contact-email">
-            <a href="mailto:4eightysix@gmail.com">4eightysix@gmail.com</a>
+            <a href="mailto:4eightysixlab@gmail.com">4eightysixlab@gmail.com</a>
           </p>
         </div>
         {/* <div className="contact-block socials">

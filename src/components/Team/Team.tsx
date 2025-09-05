@@ -3,6 +3,11 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./team.css";
 
+import flaviusImg from "../../assets/Flavius.png";
+import cipriImg from "../../assets/Cipri2.png";
+import andreiImg from "../../assets/Andrei.png";
+import bogdanImg from "../../assets/Bogdan.png";
+
 gsap.registerPlugin(ScrollTrigger);
 
 type Member = {
@@ -16,30 +21,25 @@ const MEMBERS: Member[] = [
   {
     name: "Flavius Stasac",
     role: "Co-Founder & General Manager",
-    photo:
-      "https://github.com/flaviusGS/Weout-Webage/blob/main/public/img/Flavius.png?raw=true",
+    photo: flaviusImg,
     linkedin: "https://www.linkedin.com/in/USERNAME",
   },
   {
     name: "Ciprian Negruț",
     role: "Co-Founder & Software Developer",
-
-    photo:
-      "https://github.com/flaviusGS/Weout-Webage/blob/main/public/img/Cipri.png?raw=true",
+    photo: cipriImg,
     linkedin: "https://www.linkedin.com/in/USERNAME",
   },
   {
     name: "Andrei Havasi",
     role: "Co-Founder & Software Developer",
-    photo:
-      "https://github.com/flaviusGS/Weout-Webage/blob/main/public/img/Andrei.png?raw=true",
+    photo: andreiImg,
     linkedin: "https://www.linkedin.com/in/USERNAME",
   },
   {
     name: "Bogdan Pupeza",
     role: "Co-Founder & Software Developer",
-    photo:
-      "https://github.com/flaviusGS/Weout-Webage/blob/main/public/img/Bogdan.png?raw=true",
+    photo: bogdanImg,
     linkedin: "https://www.linkedin.com/in/USERNAME",
   },
 ];
